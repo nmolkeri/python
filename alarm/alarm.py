@@ -10,13 +10,13 @@ c = "https://www.youtube.com/watch?v=QdvLj9Wr8Q0"
 Alarm = input("Enter the alarm time: ")
 print(Alarm)
 
-Time = time.strftime("%H:%M")
+Time = time.strftime("%I:%M %p")
 
 print(Time)
 
 while Time != Alarm:
    print("Its not time yet")
-   Time = time.strftime("%H:%M")
+   Time = time.strftime("%I:%M %p")
    time.sleep(1)
 
 if Time == Alarm:
